@@ -15,6 +15,10 @@
         row.appendChild(nameCell);
         row.appendChild(emailCell);
         staffTable.appendChild(row);
-      });
+    });  
 })
-    })();
+    .catch((error) => {
+        console.error("Error loading JSON:", error);
+    });
+
+})();
